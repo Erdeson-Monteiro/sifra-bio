@@ -1,0 +1,3 @@
+const BRL=n=>Number(n||0).toLocaleString('pt-BR',{style:'currency',currency:'BRL'});const data=d=>new Date(d).toLocaleDateString('pt-BR');if(new URLSearchParams(location.search).get('apresentacao')==='1')document.body.classList.add('apresentacao');
+function evento(fn){const e=new EventSource('/api/eventos');['venda','pendencia','regras','simulacao','reset'].forEach(x=>e.addEventListener(x,a=>fn(x,JSON.parse(a.data))));return e}
+function topo(){document.write('<header class="top"><strong>Sifra Bio</strong><a href="/">Início</a><a href="/whatsapp">WhatsApp</a><a href="/painel">Painel</a><a href="/lote">Lote</a><a href="/regras">Regras</a></header><span class="badge">Protótipo · dados simulados</span>')}

@@ -1,0 +1,17 @@
+{
+  "name": "sifra-bio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Protótipo Sifra Bio",
+  "type": "commonjs",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.4.1",
+    "express": "^5.1.0",
+    "qrcode": "^1.5.4"
+  }
+}
